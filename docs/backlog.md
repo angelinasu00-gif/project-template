@@ -27,14 +27,10 @@ without asking you anything.
 
 | # | Story | Acceptance criteria | Status |
 |---|---|---|---|
-| 1 | As a ___, I can ___ | | not started |
-| 2 | As a ___, I can ___ | | not started |
-| 3 | As a ___, I can ___ | | not started |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
+| 1 | As a traveler, I can receive help with planning my trips | | not started |
+| 2 | As a traveler, I can get a understanding of my day-to-day schedule before I'm at my destination | | not started |
+| 3 | As a traveler, I can view a packing list tailored to my vibe and destination | | not started |
+
 
 <!-- Aim for 8-15 across the semester. Fewer than 8 is probably too little;
      more than 15 usually means individual items are too big. -->
