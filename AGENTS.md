@@ -11,15 +11,22 @@ rather than guessing.
 
 ## 1. What this project is
 
+Curate a itinerary for your travels. Input can be as complicated and as simple as a vibe as to what client is looking for (i.e. destination, budget, day-to-day, etc.)
+
 <!-- Fill this in. Two or three sentences. An assistant that knows what the app
      is for makes better guesses about everything you forgot to specify. -->
 
 **Purpose:**
 
+Make planning for travel easier.
+
 **Who uses it:**
+
+Anyone who wants to travel. \
 
 **What kind of app:** (static-web, server-side web app, python-tool, other, see docs/course/tracks.md)
 
+server-side web app
 ---
 
 ## 2. Rules that do not change
@@ -75,9 +82,6 @@ stated, ask before starting. The roles have different rules.
 |---|---|---|
 | **Spec writer** | Expands a backlog item into `specs/NN-name.md` | Write code |
 | **Questioner** | Finds what the spec forgot; max 10 questions, most important first | Answer its own questions, or write code |
-| **Test writer** | Writes failing tests in `tests/`, then explains them in plain English and stops | Write implementation code |
-| **Builder** | Writes code until tests pass | Touch any existing test |
-| **Reviewer** | One concern only; max 5 comments, ranked most important first | Fix things itself |
 
 ---
 
@@ -85,19 +89,15 @@ stated, ask before starting. The roles have different rules.
 
 <!-- Yours. Add a rule every time an assistant does something you didn't want.
      A rule written here is a mistake that never happens twice. Examples of the
-     shape. Delete these and write your own:
+     shape. Delete these and write your own: !>
 
-     - Keep all user-facing text in one place so it can be changed without
-       hunting through the code.
-     - Do not add a new dependency without asking. Prefer what's already here.
-     - Every user-visible date shows as "Mar 3, 2026", never as a raw timestamp.
-     - If the app can't reach the network, show a message and keep working
-       offline. Never show a blank screen.
 -->
 
--
--
--
+- Never modify any existing test
+- Every feature must have objective
+- No assistant may merge its own work
+- No new dependencies without approval
+
 
 ---
 
@@ -106,6 +106,7 @@ stated, ask before starting. The roles have different rules.
 <!-- How this repo is laid out and named. Fill in as you go. -->
 
 - **Source code:** `src/`
+  React and Tailwind
 - **Tests:** `tests/`, one file per feature, named for the spec it tests
 - **Feature specs:** `specs/NN-name.md`, numbered to match `docs/backlog.md`
 - **Data files:** `data/`
