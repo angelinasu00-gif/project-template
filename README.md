@@ -2,17 +2,14 @@
      rewritten in Stage 3 when a classmate has to run your app from it without
      asking you anything. See docs/course/DELIVERABLES.md -->
 
-> **New to this template?** Read [docs/course/START-HERE.md](docs/course/START-HERE.md) first.
-> Then delete this line.
 
-# PROJECT NAME
+# PROJECT NAME: nAvI 
 
-One sentence: what this does and who it's for.
+A web app that helps travel-lovers generate destinations, itineraries, budgets, and packing lists based on as simple as a given vibe.
 
 ## What it does
 
-Two or three sentences. No jargon. Someone who has never seen your project
-should finish this section knowing whether it's useful to them.
+nAvI helps elevate the stress that goes into traveling. This spans from planning the trip from scratch, like suggesting destinations and estimate budgets, to curating a trip based on a vibe. This tool replaces hours of research across several sites with a faster and personalized site. 
 
 ## Screenshot
 
@@ -28,9 +25,11 @@ and watching them. Every question they ask is a bug in this section.
 
 ### You will need
 
-- <!-- e.g. Python 3.11 or newer -->
-- <!-- e.g. a free GitHub account -->
-- <!-- e.g. an API key from ____ (say how to get one, and whether it costs money) -->
+- Render account
+- Neon account
+- TensorX API
+- ChatGPT
+  
 
 ### Steps
 
@@ -40,10 +39,29 @@ git clone <YOUR REPO URL>
 cd <YOUR REPO NAME>
 
 # 2. Install what it needs
-# (fill in; see docs/course/tracks.md for your track's version)
+cd src/backend
+npm install
 
-# 3. Run it
-# (fill in)
+cd ../frontend
+npm install
+
+# 3. Set environment variables
+# Create src/backend/.env and add:
+# OPENAI_API_KEY=...
+# TENSORX_API_KEY=...
+# DATABASE_URL=...
+# PLACES_API_KEY=...
+# UNSPLASH_API_KEY=...
+
+# 4. Run it
+# Backend:
+cd src/backend
+npm start
+
+# Frontend:
+cd ../frontend
+npm run dev
+
 ```
 
 Then open <!-- e.g. http://localhost:8501 --> in your browser.
